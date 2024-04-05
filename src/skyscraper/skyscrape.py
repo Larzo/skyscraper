@@ -66,16 +66,3 @@ class IndeedScraper:
       start = len(self.jobs) 
       time.sleep(2)
 
-print('main')
-scraper = IndeedScraper('Ruby+Developer', 'Boston')
-print('after ctor')
-scraper.accumulate()
-
-for job in scraper.jobs:
-  print(job)
-  print("\n\n" + "*" * 30 + "\n\n")
-
-print(f"{len(scraper.jobs)} jobs")
-print(scraper)
-# scraper.save_to_file()
-
